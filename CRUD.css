@@ -1,0 +1,96 @@
+/* ----------------------- */
+/* ------BASE STYLING----- */
+/* ----------------------- */
+
+*, *::after, *::before{ 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /*Removes scrollbar*/
+}
+
+/* ----------------------- */
+/* ------TOP OF PAGE------ */
+/* ----------------------- */
+
+.head-container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#employeeName{
+    height: 50px;
+    width: 600px;
+    margin: 10px;
+}
+
+label{
+    padding: 10px 10px;
+}
+
+#newEmployee{
+    height: 50px;
+    margin: 10px;
+}
+
+/* ----------------------- */
+/* ---------TABLE--------- */
+/* ----------------------- */
+
+.tbl-container{
+    width: 95%;
+    margin: auto; /*Puts table in center horizontally*/
+    margin-top: 10px;
+}
+
+.tbl-fixed{
+    overflow-y: scroll;
+    max-height: 85vh;
+}
+
+
+
+/* ----------------------- */
+/* ---------MOBILE-------- */
+/* ----------------------- */
+
+@media only screen and (max-width:900px) {
+
+    td.collapsed,
+    th.collapsed{
+        display:none;
+        width:0;
+        height:0;
+        opacity:0;
+        visibility: collapse;
+    }
+
+    #employeeTable thead{
+        width: 100%;
+    }
+
+    .modal-body{
+        max-height: 640px;
+    }
+
+    #newEmployee{
+        height: 60px;
+    }
+}
+
+
+
+
+
+
